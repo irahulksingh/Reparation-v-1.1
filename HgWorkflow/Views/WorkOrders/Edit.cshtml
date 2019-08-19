@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     @Html.Label("Reparationsnr", new { @class = "control-label col-md-2" })
-                    <div class="col-md-4">
+                    <div class="col-md-9">
                         @Html.EditorFor(model => model.WorkOrderId, new { htmlAttributes = new { @class = "form-control", Style = "background:#cccccc;", @readonly = "true" } })
                         @Html.ValidationMessageFor(model => model.WorkOrderId, "", new { @class = "text-danger" })
                     </div>
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Föremål(1)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("Föremål1", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.JewelleryDescription1, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.JewelleryDescription1, "", new { @class = "text-danger" })
@@ -68,14 +68,14 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Åtgärd(1)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("Åtgärd", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.WorkToBeDone, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.WorkToBeDone, "", new { @class = "text-danger" })
                     </div>
                 </div>
                 <div class="form-group">
-                    @Html.Label("Föremål(2)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("Föremål2", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.JewelleryDescription2, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.JewelleryDescription2, "", new { @class = "text-danger" })
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Åtgärd(2)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("Åtgärd", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.WorkToBeDone2, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.WorkToBeDone2, "", new { @class = "text-danger" })
@@ -91,7 +91,7 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Föremål(3)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("Föremål3", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.JewelleryDescription3, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.JewelleryDescription3, "", new { @class = "text-danger" })
@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Åtgärd(3)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("Åtgärd", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.WorkToBeDone3, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.WorkToBeDone3, "", new { @class = "text-danger" })
@@ -131,7 +131,7 @@
         </div>*@
 
                 <div class="form-group">
-                    @Html.Label("Datum (MM-dd-yyyy)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("KF Status (MM-dd-yyyy)", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.DateAcceptedOrRejected, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.DateAcceptedOrRejected, "", new { @class = "text-danger" })
@@ -180,9 +180,10 @@
 
 
                 <div class="text-center">
-                    <input type="submit" value="Save" class="btn btn-default" style="background-color:#004785;color:#ffffff" />
+                    <input type="submit" value="Spara" class="btn btn-default" style="background-color:#004785;color:#ffffff" />
                     <br />
-                    @Html.ActionLink("Back to List", "Index")
+                    @Html.ActionLink("Huvud sida", "Index")
+                    @*@Html.ActionLink("Skriv ut", "Detail")*@
                 </div>
 
             </form>

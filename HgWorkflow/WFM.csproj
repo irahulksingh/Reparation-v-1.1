@@ -232,6 +232,7 @@
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\Reparation - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\womg - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\womgmt - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\womgt - Web Deploy.pubxml" />
