@@ -1,0 +1,89 @@
+﻿@model IEnumerable<HgWorkflow.Models.WorkOrder>
+
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/NewStyle.css" rel="stylesheet" />
+<div class="list-page">
+    <div class="form">
+        <div class="form-horizontal">
+            <p class="text-center text-info"><b>
+    @Html.ActionLink("Skäpa ny Reparation", "Create")
+</b>
+            </p>
+            @using (Html.BeginForm())
+            {
+            <centre>
+                <p class="col-lg-12">
+                    Sök på <b> Telefonnummer/ Reparationsnr</b>: @Html.TextBox("SearchString", "", new { @class = "form-control" })
+                    <input type="submit" value="Sök" class="btn btn-default" style="background-color:#004785;color:#ffffff" />
+                </p>
+            </centre>
+            }
+            <table class="table" style="text-align:left;">
+
+                <tr>
+                    <th>
+                        @Html.Label("Reparationsnr")
+                    </th>
+
+                    <th>
+                        @Html.Label("Kund Namn")
+                    </th>
+                    <th>
+                        @Html.Label("Telefonnummer")
+                    </th>
+
+                    <th>
+                        @Html.Label("Status")
+                    </th>
+                    <th>
+                        @Html.Label("Anteckningar")
+                    </th>
+                    <th class="text-center">
+                        @Html.Label("Handling")
+                    </th >
+                    <th></th>
+                </tr>
+                @if (Model == null)
+                {
+                    <span> No Items found</span>
+
+                }
+                else
+                {
+
+                    foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.WorkOrderId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CustomerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CustomerMobileNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Comments)
+                        </td>
+
+                        <td class="text-center">
+                            @Html.ActionLink("Redigera", "Edit", new { id = item.Id }) ||
+                            @Html.ActionLink("Detalj", "Details", new { id = item.Id }) ||
+                            @Html.ActionLink("Radera", "Delete", new { id = item.Id })
+                        </td>
+                    </tr>
+                    }
+                }
+
+            </table>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
