@@ -82,8 +82,7 @@ namespace HgWorkflow.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "AnstallaningNummer or Password incorrcet");
-                    
+                    ModelState.AddModelError(string.Empty,"AnstallaningNummer or Password incorrect");
                 }
             }
             return View();
