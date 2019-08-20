@@ -69,6 +69,7 @@
                 <div class="col-md-7">
                     @Html.EditorFor(model => model.AgentName, new { htmlAttributes = new { @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = Session["FullName"].ToString() } })
                     @Html.ValidationMessageFor(model => model.AgentName, "", new { @class = "text-danger" })
+
                 </div>
                 <div class="col-md-5">
                     @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { Placeholder = "Inlämnat (MM-dd-yyyy)", @class = "form-control" } })
