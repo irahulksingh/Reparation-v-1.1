@@ -43,7 +43,7 @@ namespace HgWorkflow.Models
 
         public string AgentName { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         [Required(ErrorMessage = "Föremål Datum")]
         public DateTime ProductGivenOn { get; set; }
 
@@ -54,7 +54,7 @@ namespace HgWorkflow.Models
         //public DateTime DateProposed { get; set; }
 
 
-        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? DateAcceptedOrRejected { get; set; }
 
         public AcceptedRejectedStatus sAcceptedRejectedStatus { get; set; }
