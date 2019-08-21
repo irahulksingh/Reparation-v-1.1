@@ -7,19 +7,23 @@
 <div class="list-page">
     <div class="form">
         <div class="form-horizontal">
-            <p class="text-center text-info"><b>
+            <p class="text-center text-info">
     
-    <input type="button" class="btn btn-success"style="color:#000000" value="Skapa ny Reparation" onclick="location.href='@Url.Action("Create", "WorkOrders")'" />
-</b>
+    
+
             </p>
             @using (Html.BeginForm())
             {
-            <centre>
-                <p class="col-lg-12">
-                    Sök på <b> Telefonnummer/ Reparationsnr</b>: @Html.TextBox("SearchString", "", new { @class = "form-control" })
-                    <input type="submit" value="Sök" class="btn btn-default" style="background-color:#004785;color:#ffffff" />
-                </p>
-            </centre>
+            <div class="col-lg-12 text-center" >
+
+
+                    @Html.TextBox("SearchString", "", new {style = "display: inline;", Placeholder = "Sök på Telefonnummer/ Reparationsnr", @class = "form-control" })
+                    <input type="submit" value="Sök" class="btn btn-default" style="background-color:#004785;color:#ffffff;width:150px;" />
+                    <input type="button" class="btn btn-success" style="background-color:#00580b;color:#ffffff;width:150px" value="Skapa ny Reparation" onclick="location.href='@Url.Action("Create", "WorkOrders")'" />
+                              
+               
+
+            </div>
             }
             <table class="table" style="text-align:left;">
 
@@ -47,7 +51,7 @@
                     <th></th>
                 </tr>
                 @if (Model == null)
-                {
+                        {
                     <span> No Items found</span>
 
                 }
