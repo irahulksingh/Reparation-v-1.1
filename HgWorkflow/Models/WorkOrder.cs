@@ -13,7 +13,7 @@ namespace HgWorkflow.Models
 
         public string WorkOrderId { get; set; }
 
-      
+
         public string GoldSmithName { get; set; }
 
         [Required(ErrorMessage = "Kund namn")]
@@ -40,7 +40,7 @@ namespace HgWorkflow.Models
         public string WorkToBeDone2 { get; set; }
 
         public string WorkToBeDone3 { get; set; }
-      
+
         public string AgentName { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
@@ -57,6 +57,8 @@ namespace HgWorkflow.Models
         [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime? DateAcceptedOrRejected { get; set; }
 
+        public AcceptedRejectedStatus sAcceptedRejectedStatus { get; set; }
+
         // [Display(Name = "To be returned on :")]
         //public DateTime? ProductToBeReturnedOn { get; set; }
 
@@ -69,5 +71,13 @@ namespace HgWorkflow.Models
         public string Status { get; set; }
 
         public string Comments { get; set; }
+    }
+
+    public enum AcceptedRejectedStatus
+        {
+        Accepterat,
+        Ejaccepterat,
+        Vänteläge
+
     }
 }

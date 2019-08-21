@@ -173,6 +173,14 @@
     <Compile Include="Migrations\201908171953188_changeFlds.Designer.cs">
       <DependentUpon>201908171953188_changeFlds.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908201918150_newFieldAdded.cs" />
+    <Compile Include="Migrations\201908201918150_newFieldAdded.Designer.cs">
+      <DependentUpon>201908201918150_newFieldAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908201940003_newFieldAdded1.cs" />
+    <Compile Include="Migrations\201908201940003_newFieldAdded1.Designer.cs">
+      <DependentUpon>201908201940003_newFieldAdded1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Models\WorkOrder.cs" />
@@ -322,6 +330,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908171953188_changeFlds.resx">
       <DependentUpon>201908171953188_changeFlds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908201918150_newFieldAdded.resx">
+      <DependentUpon>201908201918150_newFieldAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908201940003_newFieldAdded1.resx">
+      <DependentUpon>201908201940003_newFieldAdded1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

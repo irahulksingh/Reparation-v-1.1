@@ -8,7 +8,8 @@
     <div class="form">
         <div class="form-horizontal">
             <p class="text-center text-info"><b>
-    @Html.ActionLink("Skapa ny Reparation", "Create")
+    
+    <input type="button" class="btn btn-success"style="color:#000000" value="Skapa ny Reparation" onclick="location.href='@Url.Action("Create", "WorkOrders")'" />
 </b>
             </p>
             @using (Html.BeginForm())
