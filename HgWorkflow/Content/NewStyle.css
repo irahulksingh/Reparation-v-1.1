@@ -1,6 +1,7 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
+    /*background-image: url('../Images/GuldSmed.png');*/
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
@@ -60,6 +61,7 @@ dl {
     z-index: 1;
     background: #FFFFFF;
     max-width: 80%;
+    height:80%;
     margin: 0 auto 200px;
     padding: 45px;
     text-align: left;
@@ -72,6 +74,7 @@ dl {
     z-index: 1;
     background: #FFFFFF;
     max-width: 80%;
+    height:80%;
     margin: 0 auto 200px;
     padding: 20px;
     text-align: center;
@@ -167,6 +170,7 @@ dl {
 body {
     /*background: #76b852;*/ /* fallback for old browsers */
     background: #007293;
+    /*background-image: url("")*/
     /*background: -webkit-linear-gradient(right, #76b852, #8DC26F);
     background: -moz-linear-gradient(right, #76b852, #8DC26F);
     background: -o-linear-gradient(right, #76b852, #8DC26F);
@@ -174,4 +178,5 @@ body {
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;*/
+    background-image: url('../Images/GuldSmed.png');
 }

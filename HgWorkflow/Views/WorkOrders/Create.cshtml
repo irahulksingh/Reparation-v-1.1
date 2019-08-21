@@ -17,10 +17,15 @@
                 <h2>Ny Reparation</h2>
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                <div class="col-md-10 text-left">
+                <div class="col-md-5 text-left">
 
                     @Html.Label("Reparationsnr")
                     @Html.TextBoxFor(model => model.WorkOrderId, new { @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = Session["ButikId"].ToString() + "-" + DateTime.Now.ToString("yyMMddHHmm") })
+
+                </div>
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.AgentName, new { htmlAttributes = new { @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = Session["FullName"].ToString() } })
+                    @Html.ValidationMessageFor(model => model.AgentName, "", new { @class = "text-danger" })
 
                 </div>
 
@@ -66,13 +71,9 @@
                     @Html.EditorFor(model => model.WorkToBeDone3, new { htmlAttributes = new { Placeholder = "Åtgärd", @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.WorkToBeDone3, "", new { @class = "text-danger" })
                 </div>
-                <div class="col-md-7">
-                    @Html.EditorFor(model => model.AgentName, new { htmlAttributes = new { @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = Session["FullName"].ToString() } })
-                    @Html.ValidationMessageFor(model => model.AgentName, "", new { @class = "text-danger" })
 
-                </div>
                 <div class="col-md-5">
-                    @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { Placeholder = "Inlämnat (MM-dd-yyyy)", @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = DateTime.Now.ToString("yyyy-MM-dd") } })
+                    @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { Placeholder = "Inlämnat (dd-MM-yyyy)", @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = DateTime.Now.ToString("MM-dd-yyyy") } })
                     @Html.ValidationMessageFor(model => model.ProductGivenOn, "", new { @class = "text-danger" })
                 </div>
                 @*<div class="col-md-7">
@@ -80,12 +81,12 @@
             @Html.ValidationMessageFor(model => model.DateProposed, "", new { @class = "text-danger" })
         </div>*@
 
-                              <div class="col-md-7">
-                    @Html.EnumDropDownListFor(x => x.sAcceptedRejectedStatus, "Välj KF Status", new { @class = "form-control"})
-                    @Html.ValidationMessageFor(model => model.ProductGivenOn, "", new { @class = "text-danger" })
+                <div class="col-md-7">
+                    @Html.EnumDropDownListFor(model => model.sAcceptedRejectedStatus, "Välj KF Status", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.sAcceptedRejectedStatus, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-md-5">
-                    @Html.EditorFor(model => model.DateAcceptedOrRejected, new { htmlAttributes = new { Placeholder = "KF Status (MM-dd-yyyy)", @class = "form-control" } })
+                    @Html.EditorFor(model => model.DateAcceptedOrRejected, new { htmlAttributes = new { Placeholder = "KF Status (dd-MM-yyyy)", @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.DateAcceptedOrRejected, "", new { @class = "text-danger" })
                 </div>
 
@@ -104,27 +105,31 @@
                 </div>
 
                 <div class="col-md-5">
-                    @Html.EditorFor(model => model.Status, new { htmlAttributes = new { placeholder = "Status", @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                    @Html.EnumDropDownListFor(model => model.sStatus, "Mottaget", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.sStatus, "", new { @class = "text-danger" })
                 </div>
 
-                <div class="col-md-9">
+                <div class="col-md-7">
                     @Html.EditorFor(model => model.Comments, new { htmlAttributes = new { placeholder = "Anteckningar", @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
                 </div>
-                <div class="text-center">
+
+                <div>
                     <input type="submit" value="Skapa" class="btn btn-default" style="background-color:#004785;color:#ffffff" />
-                    <br />
-                    @Html.ActionLink("Huvud sida", "Index")
+
                 </div>
 
             </form>
-            
-
         </div>
 
     </div>
-    
+    <br />
+    @Html.ActionLink("Huvud sida", "Index")
+
+
+
+
+
 }
 
 <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />

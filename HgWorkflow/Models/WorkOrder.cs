@@ -43,9 +43,11 @@ namespace HgWorkflow.Models
 
         public string AgentName { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+        //[DataType(DataType.Date)]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
         [Required(ErrorMessage = "Föremål Datum")]
         public DateTime ProductGivenOn { get; set; }
+
 
 
         //[Required(ErrorMessage = "Date proposed required")]
@@ -53,8 +55,8 @@ namespace HgWorkflow.Models
 
         //public DateTime DateProposed { get; set; }
 
-
-        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+        //[DataType(DataType.Date)]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime? DateAcceptedOrRejected { get; set; }
 
         public AcceptedRejectedStatus sAcceptedRejectedStatus { get; set; }
@@ -67,17 +69,27 @@ namespace HgWorkflow.Models
         //[Display(Name = "Estimate :")]
 
         //public int AmountEstimate { get; set; }
-
-        public string Status { get; set; }
+        
+            [Range(1,3)]
+        public status sStatus { get; set; }
 
         public string Comments { get; set; }
     }
 
     public enum AcceptedRejectedStatus
         {
-        Accepterat,
-        Ejaccepterat,
-        Vänteläge
+        Accepterat = 1,
+        [Display(Name = "Ej Accepterat")]
+        Ejaccepterat = 2,
+        Vänteläge = 3
+    }
+    public enum status
+    {
+        Mottaget = 1,
+        [Display(Name ="Hos Guldsmed")]
+        WithGuldsmed = 2,
+        [Display(Name = ":Åter ej butik")]
+        Returned = 3
 
     }
 }

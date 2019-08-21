@@ -79,7 +79,7 @@ namespace HgWorkflow.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,WorkOrderId,GoldSmithName,CustomerName,CustomerMobileNumber,CustomerEmail,JewelleryDescription1,JewelleryDescription2,JewelleryDescription3,WorkToBeDone,WorkToBeDone2,WorkToBeDone3,AgentName,ProductGivenOn,DateAcceptedOrRejected,AmountToBeCollected,Status,Comments,sAcceptedRejectedStatus")] WorkOrder workOrder)
+        public ActionResult Create([Bind(Include = "Id,WorkOrderId,GoldSmithName,CustomerName,CustomerMobileNumber,CustomerEmail,JewelleryDescription1,JewelleryDescription2,JewelleryDescription3,WorkToBeDone,WorkToBeDone2,WorkToBeDone3,AgentName,ProductGivenOn,DateAcceptedOrRejected,AmountToBeCollected,sStatus,Comments,sAcceptedRejectedStatus")] WorkOrder workOrder)
         {
 
                if (ModelState.IsValid)
@@ -114,7 +114,7 @@ namespace HgWorkflow.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,WorkOrderId,GoldSmithName,CustomerName,CustomerMobileNumber,CustomerEmail,JewelleryDescription1,JewelleryDescription2,JewelleryDescription3,WorkToBeDone,WorkToBeDone2,WorkToBeDone3,AgentName,ProductGivenOn,DateAcceptedOrRejected,AmountToBeCollected,Status,Comments,sAcceptedRejectedStatus")] WorkOrder workOrder)
+        public ActionResult Edit([Bind(Include = "Id,WorkOrderId,GoldSmithName,CustomerName,CustomerMobileNumber,CustomerEmail,JewelleryDescription1,JewelleryDescription2,JewelleryDescription3,WorkToBeDone,WorkToBeDone2,WorkToBeDone3,AgentName,ProductGivenOn,DateAcceptedOrRejected,AmountToBeCollected,sStatus,Comments,sAcceptedRejectedStatus")] WorkOrder workOrder)
         {
             if (ModelState.IsValid)
             {
