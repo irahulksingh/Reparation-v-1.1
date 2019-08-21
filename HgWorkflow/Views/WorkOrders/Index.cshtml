@@ -33,6 +33,9 @@
                     </th>
 
                     <th>
+                        @Html.Label("Guldsmed")
+                    </th>
+                    <th>
                         @Html.Label("Kund Namn")
                     </th>
                     <th>
@@ -47,7 +50,7 @@
                     </th>
                     <th class="text-center">
                         @Html.Label("Handling")
-                    </th >
+                    </th>
                     <th></th>
                 </tr>
                 @if (Model == null)
@@ -65,6 +68,9 @@
                             @Html.DisplayFor(modelItem => item.WorkOrderId)
                         </td>
                         <td>
+                            @Html.DisplayFor(modelItem => item.GoldSmithName)
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.CustomerName)
                         </td>
                         <td>
@@ -79,7 +85,7 @@
 
                         <td class="text-center">
                             @Html.ActionLink("Redigera", "Edit", new { id = item.Id }) ||
-                            @Html.ActionLink("Skriv ut", "Details", new { id = item.Id }) 
+                            @Html.ActionLink("Skriv ut", "Details", new { id = item.Id })
                             @*@Html.ActionLink("Radera", "Delete", new { id = item.Id })*@
                         </td>
                     </tr>

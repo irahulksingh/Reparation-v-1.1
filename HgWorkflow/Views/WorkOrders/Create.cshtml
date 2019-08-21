@@ -72,7 +72,7 @@
 
                 </div>
                 <div class="col-md-5">
-                    @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { Placeholder = "Inlämnat (MM-dd-yyyy)", @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = DateTime.Now.ToString("yyyy-MM-dd") } })
+                    @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { Placeholder = "Inlämnat (dd-MM-yy)", @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = DateTime.Now.ToString("dd-MM-yy") } })
                     @Html.ValidationMessageFor(model => model.ProductGivenOn, "", new { @class = "text-danger" })
                 </div>
                 @*<div class="col-md-7">
@@ -82,10 +82,10 @@
 
                               <div class="col-md-7">
                     @Html.EnumDropDownListFor(x => x.sAcceptedRejectedStatus, "Välj KF Status", new { @class = "form-control"})
-                    @Html.ValidationMessageFor(model => model.ProductGivenOn, "", new { @class = "text-danger" })
+                    @Html.ValidationMessageFor(model => model.sAcceptedRejectedStatus, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-md-5">
-                    @Html.EditorFor(model => model.DateAcceptedOrRejected, new { htmlAttributes = new { Placeholder = "KF Status (MM-dd-yyyy)", @class = "form-control" } })
+                    @Html.EditorFor(model => model.DateAcceptedOrRejected, new { htmlAttributes = new { Placeholder = "KF Status (dd-MM-yy)", @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.DateAcceptedOrRejected, "", new { @class = "text-danger" })
                 </div>
 
