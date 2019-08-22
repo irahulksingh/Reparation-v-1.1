@@ -7,21 +7,23 @@
 <div class="list-page">
     <div class="form">
         <div class="form-horizontal">
-            <p class="text-center text-info">
+            <p class="text-center">
     
+                <h2>Reparation Lista</h2>
     
 
             </p>
             @using (Html.BeginForm())
             {
-            <div class="col-lg-12 text-center" >
+
+            <div class="container">
 
 
-                    @Html.TextBox("SearchString", "", new {style = "display: inline;", Placeholder = "Sök på Telefonnummer/ Reparationsnr/Kund namn", @class = "form-control" })
-                    <input type="submit" value="Sök" class="btn btn-default" style="background-color:#004785;color:#ffffff;width:150px;" />
-                    <input type="button" class="btn btn-success" style="background-color:#00580b;color:#ffffff;width:150px" value="Skapa ny Reparation" onclick="location.href='@Url.Action("Create", "WorkOrders")'" />
-                              
-               
+                @Html.TextBox("SearchString", "", new { style = "display: inline;width:400px;", Placeholder = "Sök på Kundnamn/Reparationsnr/Telefonnr", @class = "form-control col-md-10" })
+                <input type="submit" value="Sök" class="btn btn-info" style="color:#000000" />
+                <input type="button" class="btn btn-success" style="color:#000000" @*style="background-color:#00580b;color:#ffffff;width:150px"*@ value="Skapa ny Reparation" onclick="location.href='@Url.Action("Create", "WorkOrders")'" /><br /><br />
+
+
 
             </div>
             }

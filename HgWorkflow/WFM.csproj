@@ -137,6 +137,10 @@
     <Compile Include="Migrations\201908212000179_newmigrationtochk.Designer.cs">
       <DependentUpon>201908212000179_newmigrationtochk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908221310061_newchanges.cs" />
+    <Compile Include="Migrations\201908221310061_newchanges.Designer.cs">
+      <DependentUpon>201908221310061_newchanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Models\WorkOrder.cs" />
@@ -240,6 +244,7 @@
     <Content Include="Views\WorkOrders\Index.cshtml" />
     <Content Include="Views\WorkOrders\Create.cshtml" />
     <Content Include="Views\WorkOrders\Create - Copy.cshtml" />
+    <Content Include="Views\WorkOrders\Edit - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -260,6 +265,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201908212000179_newmigrationtochk.resx">
       <DependentUpon>201908212000179_newmigrationtochk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908221310061_newchanges.resx">
+      <DependentUpon>201908221310061_newchanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

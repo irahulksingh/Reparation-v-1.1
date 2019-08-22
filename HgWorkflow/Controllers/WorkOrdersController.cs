@@ -25,7 +25,7 @@ namespace HgWorkflow.Controllers
                 if (!String.IsNullOrEmpty(searchString))
                 {
                     workordersearch = workordersearch.Where(wo => wo.CustomerMobileNumber.Contains(searchString)
-                                           || wo.WorkOrderId.Contains(searchString));
+                                           || wo.WorkOrderId.Contains(searchString) || wo.CustomerName.Contains(searchString));
 
                                             return View(workordersearch.ToList());
                     //}
