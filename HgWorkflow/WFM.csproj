@@ -133,53 +133,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201908052125038_FirstMig.cs" />
-    <Compile Include="Migrations\201908052125038_FirstMig.Designer.cs">
-      <DependentUpon>201908052125038_FirstMig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908052227214_SecondMig.cs" />
-    <Compile Include="Migrations\201908052227214_SecondMig.Designer.cs">
-      <DependentUpon>201908052227214_SecondMig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908082114077_SessionChanges.cs" />
-    <Compile Include="Migrations\201908082114077_SessionChanges.Designer.cs">
-      <DependentUpon>201908082114077_SessionChanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908091947382_changestowo.cs" />
-    <Compile Include="Migrations\201908091947382_changestowo.Designer.cs">
-      <DependentUpon>201908091947382_changestowo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908112007159_noChange.cs" />
-    <Compile Include="Migrations\201908112007159_noChange.Designer.cs">
-      <DependentUpon>201908112007159_noChange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908112037227_ChangetoWorkOrderModel.cs" />
-    <Compile Include="Migrations\201908112037227_ChangetoWorkOrderModel.Designer.cs">
-      <DependentUpon>201908112037227_ChangetoWorkOrderModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908112057157_allChanges.cs" />
-    <Compile Include="Migrations\201908112057157_allChanges.Designer.cs">
-      <DependentUpon>201908112057157_allChanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908112238220_allChanges1.cs" />
-    <Compile Include="Migrations\201908112238220_allChanges1.Designer.cs">
-      <DependentUpon>201908112238220_allChanges1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908171852471_changelang.cs" />
-    <Compile Include="Migrations\201908171852471_changelang.Designer.cs">
-      <DependentUpon>201908171852471_changelang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908171953188_changeFlds.cs" />
-    <Compile Include="Migrations\201908171953188_changeFlds.Designer.cs">
-      <DependentUpon>201908171953188_changeFlds.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908201918150_newFieldAdded.cs" />
-    <Compile Include="Migrations\201908201918150_newFieldAdded.Designer.cs">
-      <DependentUpon>201908201918150_newFieldAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908201940003_newFieldAdded1.cs" />
-    <Compile Include="Migrations\201908201940003_newFieldAdded1.Designer.cs">
-      <DependentUpon>201908201940003_newFieldAdded1.cs</DependentUpon>
+    <Compile Include="Migrations\201908212243121_tes1.cs" />
+    <Compile Include="Migrations\201908212243121_tes1.Designer.cs">
+      <DependentUpon>201908212243121_tes1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\UserAccount.cs" />
@@ -301,41 +257,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908052125038_FirstMig.resx">
-      <DependentUpon>201908052125038_FirstMig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908052227214_SecondMig.resx">
-      <DependentUpon>201908052227214_SecondMig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908082114077_SessionChanges.resx">
-      <DependentUpon>201908082114077_SessionChanges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908091947382_changestowo.resx">
-      <DependentUpon>201908091947382_changestowo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908112007159_noChange.resx">
-      <DependentUpon>201908112007159_noChange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908112037227_ChangetoWorkOrderModel.resx">
-      <DependentUpon>201908112037227_ChangetoWorkOrderModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908112057157_allChanges.resx">
-      <DependentUpon>201908112057157_allChanges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908112238220_allChanges1.resx">
-      <DependentUpon>201908112238220_allChanges1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908171852471_changelang.resx">
-      <DependentUpon>201908171852471_changelang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908171953188_changeFlds.resx">
-      <DependentUpon>201908171953188_changeFlds.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908201918150_newFieldAdded.resx">
-      <DependentUpon>201908201918150_newFieldAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908201940003_newFieldAdded1.resx">
-      <DependentUpon>201908201940003_newFieldAdded1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908212243121_tes1.resx">
+      <DependentUpon>201908212243121_tes1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
