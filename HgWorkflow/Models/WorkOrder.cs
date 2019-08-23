@@ -44,8 +44,9 @@ namespace HgWorkflow.Models
         public string AgentName { get; set; }
 
         //[DataType(DataType.Date)]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
+        
         [Required(ErrorMessage = "Föremål Datum")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{dd-MM-yyyy}")]
         public DateTime ProductGivenOn { get; set; }
 
 
@@ -70,7 +71,7 @@ namespace HgWorkflow.Models
 
         //public int AmountEstimate { get; set; }
         
-        [Range(1,3)]
+        [Range(0,2)]
         public status sStatus { get; set; }
 
         public string Comments { get; set; }
@@ -85,11 +86,11 @@ namespace HgWorkflow.Models
     }
     public enum status
     {
-        Mottaget = 1,
+        Mottaget = 0,
         [Display(Name ="Hos Guldsmed")]
-        WithGuldsmed = 2,
-        [Display(Name = ":Åter ej butik")]
-        Returned = 3
+        HosGuldsmed = 1,
+        [Display(Name = "Åter ej butik")]
+        Återejbutik = 2
 
     }
 }
