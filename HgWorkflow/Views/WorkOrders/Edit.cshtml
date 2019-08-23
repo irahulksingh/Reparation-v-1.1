@@ -79,8 +79,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    @Html.Label("Inlämnat (MM-dd-yyyy)")
-                    @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { Placeholder = "Inlämnat (MM-dd-yyyy)", @class = "form-control", Style = "background:#cccccc;", Value = DateTime.Now.ToString("MM-dd-yyyy") } })
+                    @Html.Label("Inlämnat (dd-MM-yyyy)")
+                    @Html.EditorFor(model => model.ProductGivenOn,"dd-MM-yyyy", new { htmlAttributes = new { Placeholder = "Inlämnat (dd-MM-yyyy)", @class = "form-control", Style = "background:#cccccc;"} })
                     @Html.ValidationMessageFor(model => model.ProductGivenOn, "", new { @class = "text-danger" })
                 </div>
                 @*<div class="col-md-7">

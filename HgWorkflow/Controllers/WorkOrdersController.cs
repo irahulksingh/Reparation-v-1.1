@@ -116,8 +116,10 @@ namespace HgWorkflow.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,WorkOrderId,GoldSmithName,CustomerName,CustomerMobileNumber,CustomerEmail,JewelleryDescription1,JewelleryDescription2,JewelleryDescription3,WorkToBeDone,WorkToBeDone2,WorkToBeDone3,AgentName,ProductGivenOn,DateAcceptedOrRejected,AmountToBeCollected,sStatus,Comments,sAcceptedRejectedStatus")] WorkOrder workOrder)
         {
+
             if (ModelState.IsValid)
             {
+               
                 db.Entry(workOrder).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

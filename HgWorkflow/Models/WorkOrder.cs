@@ -46,7 +46,7 @@ namespace HgWorkflow.Models
         //[DataType(DataType.Date)]
         
         [Required(ErrorMessage = "Föremål Datum")]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{dd-MM-yyyy}")]
+        [DisplayFormat(ApplyFormatInEditMode = true,DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime ProductGivenOn { get; set; }
 
 
