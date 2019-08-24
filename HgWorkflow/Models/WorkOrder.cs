@@ -44,32 +44,22 @@ namespace HgWorkflow.Models
         public string AgentName { get; set; }
 
         //[DataType(DataType.Date)]
-        
         [Required(ErrorMessage = "Föremål Datum")]
-        [DisplayFormat(ApplyFormatInEditMode = true,DataFormatString = "{0:dd-MM-yyyy}")]
+        [DisplayFormat(ApplyFormatInEditMode = true,DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime ProductGivenOn { get; set; }
 
 
 
-        //[Required(ErrorMessage = "Date proposed required")]
-        //[Display(Name = "Date Proposed :")]
-
-        //public DateTime DateProposed { get; set; }
-
-        //[DataType(DataType.Date)]
-        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime? DateAcceptedOrRejected { get; set; }
 
         public AcceptedRejectedStatus sAcceptedRejectedStatus { get; set; }
 
-        // [Display(Name = "To be returned on :")]
-        //public DateTime? ProductToBeReturnedOn { get; set; }
+     
 
         public int? AmountToBeCollected { get; set; }
 
-        //[Display(Name = "Estimate :")]
-
-        //public int AmountEstimate { get; set; }
+   
         
         [Range(0,2)]
         public status sStatus { get; set; }
@@ -93,4 +83,19 @@ namespace HgWorkflow.Models
         Återejbutik = 2
 
     }
+
+
+    //[Required(ErrorMessage = "Date proposed required")]
+    //[Display(Name = "Date Proposed :")]
+
+    //public DateTime DateProposed { get; set; }
+
+    //[DataType(DataType.Date)]
+
+    //[Display(Name = "Estimate :")]
+
+    //public int AmountEstimate { get; set; }
+
+    // [Display(Name = "To be returned on :")]
+    //public DateTime? ProductToBeReturnedOn { get; set; }
 }

@@ -17,15 +17,21 @@
             {
 
             <div class="container">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                    @Html.TextBox("SearchString", "", new { style = "display: inline;width:400px;", Placeholder = "Sök på Kundnamn/Reparationsnr/Telefonnr", @class = "form-control col-md-10" })
+                </div>
 
-
-                @Html.TextBox("SearchString", "", new { style = "display: inline;width:400px;", Placeholder = "Sök på Kundnamn/Reparationsnr/Telefonnr", @class = "form-control col-md-10" })
-                <input type="submit" value="Sök" class="btn btn-info" style="color:#000000" />
-                <input type="button" class="btn btn-success" style="color:#000000" @*style="background-color:#00580b;color:#ffffff;width:150px"*@ value="Skapa ny Reparation" onclick="location.href='@Url.Action("Create", "WorkOrders")'" /><br /><br />
 
 
 
             </div>
+                <input type="submit" value="Sök" class="btn btn-success btn-lg btn-block" />
+                <input type="button" class="btn btn-primary btn-lg btn-block" value="Skapa ny Reparation" onclick="location.href='@Url.Action("Create", "WorkOrders")'" /><br /><br />
+
+
+
+          
             }
             <table class="table" style="text-align:left;">
 
