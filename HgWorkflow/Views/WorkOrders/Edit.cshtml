@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.Label("Inlämnat (MM-dd-yyyy)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("Inlämnat (yyyy-MM-dd)", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.ProductGivenOn, "", new { @class = "text-danger" })
@@ -131,7 +131,7 @@
         </div>*@
 
                 <div class="form-group">
-                    @Html.Label("KF Status datum (MM-dd-yyyy)", htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.Label("KF Status datum (yyyy-MM-dd)", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EditorFor(model => model.DateAcceptedOrRejected, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.DateAcceptedOrRejected, "", new { @class = "text-danger" })
@@ -142,7 +142,7 @@
                     @Html.Label("KF Status", htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-4">
                         @Html.EnumDropDownListFor(x => x.sAcceptedRejectedStatus, "Välj KF Status", new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.ProductGivenOn, "", new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(model => model.sAcceptedRejectedStatus, "", new { @class = "text-danger" })
                     </div>
                 </div>
 

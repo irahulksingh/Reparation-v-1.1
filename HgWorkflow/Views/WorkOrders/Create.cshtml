@@ -72,7 +72,7 @@
 
                 </div>
                 <div class="col-md-5">
-                    @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { Placeholder = "Inlämnat (dd-MM-yy)", @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = DateTime.Now.ToString("dd-MM-yyyy") } })
+                    @Html.EditorFor(model => model.ProductGivenOn, new { htmlAttributes = new { Placeholder = "Inlämnat (dd-MM-yy)", @class = "form-control", @readonly = "true", Style = "background:#cccccc;", Value = DateTime.Now.ToString("yyyy-MM-dd") } })
                     @Html.ValidationMessageFor(model => model.ProductGivenOn, "", new { @class = "text-danger" })
                 </div>
                 @*<div class="col-md-7">
@@ -85,7 +85,7 @@
                     @Html.ValidationMessageFor(model => model.sAcceptedRejectedStatus, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-md-5">
-                    @Html.EditorFor(model => model.DateAcceptedOrRejected, new { htmlAttributes = new { Placeholder = "KF Status (dd-MM-yy)", @class = "form-control" } })
+                    @Html.EditorFor(model => model.DateAcceptedOrRejected, new { htmlAttributes = new { Placeholder = "KF Status (yyyy-MM-dd)", @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.DateAcceptedOrRejected, "", new { @class = "text-danger" })
                 </div>
 
