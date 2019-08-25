@@ -79,8 +79,8 @@ namespace HgWorkflow.Models
         Mottaget = 0,
         [Display(Name ="Hos Guldsmed")]
         HosGuldsmed = 1,
-        [Display(Name = "Åter ej butik")]
-        Återejbutik = 2
+        [Display(Name = "Åter i butik")]
+        Åteributik = 2
 
     }
 

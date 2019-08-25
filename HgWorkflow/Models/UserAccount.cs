@@ -11,13 +11,13 @@ namespace HgWorkflow.Models
         [Key]
         public int UserId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Anställningsnummer krävs")]
         public string  Anummer { get; set; }
 
         [Required]
         public string  FullName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Lösenord krävs")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
