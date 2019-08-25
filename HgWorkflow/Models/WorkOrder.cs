@@ -43,41 +43,59 @@ namespace HgWorkflow.Models
 
         public string AgentName { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+        //[DataType(DataType.Date)]
         [Required(ErrorMessage = "Föremål Datum")]
+        [DisplayFormat(ApplyFormatInEditMode = true,DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime ProductGivenOn { get; set; }
 
 
-        //[Required(ErrorMessage = "Date proposed required")]
-        //[Display(Name = "Date Proposed :")]
 
-        //public DateTime DateProposed { get; set; }
-
-
-        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime? DateAcceptedOrRejected { get; set; }
 
         public AcceptedRejectedStatus sAcceptedRejectedStatus { get; set; }
 
-        // [Display(Name = "To be returned on :")]
-        //public DateTime? ProductToBeReturnedOn { get; set; }
+     
 
         public int? AmountToBeCollected { get; set; }
 
-        //[Display(Name = "Estimate :")]
-
-        //public int AmountEstimate { get; set; }
-
-        public string Status { get; set; }
+   
+        
+        [Range(0,2)]
+        public status sStatus { get; set; }
 
         public string Comments { get; set; }
     }
 
     public enum AcceptedRejectedStatus
         {
-        Accepterat,
-        Ejaccepterat,
-        Vänteläge
+        Accepterat = 1,
+        [Display(Name = "Ej Accepterat")]
+        Ejaccepterat = 2,
+        Vänteläge = 3
+    }
+    public enum status
+    {
+        Mottaget = 0,
+        [Display(Name ="Hos Guldsmed")]
+        HosGuldsmed = 1,
+        [Display(Name = "Åter i butik")]
+        Åteributik = 2
 
     }
+
+
+    //[Required(ErrorMessage = "Date proposed required")]
+    //[Display(Name = "Date Proposed :")]
+
+    //public DateTime DateProposed { get; set; }
+
+    //[DataType(DataType.Date)]
+
+    //[Display(Name = "Estimate :")]
+
+    //public int AmountEstimate { get; set; }
+
+    // [Display(Name = "To be returned on :")]
+    //public DateTime? ProductToBeReturnedOn { get; set; }
 }

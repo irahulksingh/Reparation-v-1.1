@@ -133,9 +133,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\201908212243121_tes1.cs" />
     <Compile Include="Migrations\201908212243121_tes1.Designer.cs">
       <DependentUpon>201908212243121_tes1.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\201908212000179_newmigrationtochk.cs" />
+    <Compile Include="Migrations\201908212000179_newmigrationtochk.Designer.cs">
+      <DependentUpon>201908212000179_newmigrationtochk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908221310061_newchanges.cs" />
+    <Compile Include="Migrations\201908221310061_newchanges.Designer.cs">
+      <DependentUpon>201908221310061_newchanges.cs</DependentUpon>
+>>>>>>> tryingdatetimewithjs
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\UserAccount.cs" />
@@ -147,7 +157,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\NewStyle.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -189,18 +198,16 @@
     <Content Include="Content\themes\base\tabs.css" />
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Content\NewStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Guldsmed.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Properties\PublishProfiles\Reparation - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\womg - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\womgmt - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\womgt - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\Work-OrderManager - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Reparations - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -214,6 +221,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -239,6 +250,7 @@
     <Content Include="Views\WorkOrders\Index.cshtml" />
     <Content Include="Views\WorkOrders\Create.cshtml" />
     <Content Include="Views\WorkOrders\Create - Copy.cshtml" />
+    <Content Include="Views\WorkOrders\Edit - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -257,8 +269,16 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201908212243121_tes1.resx">
       <DependentUpon>201908212243121_tes1.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\201908212000179_newmigrationtochk.resx">
+      <DependentUpon>201908212000179_newmigrationtochk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908221310061_newchanges.resx">
+      <DependentUpon>201908221310061_newchanges.cs</DependentUpon>
+>>>>>>> tryingdatetimewithjs
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
