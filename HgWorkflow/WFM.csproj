@@ -197,10 +197,6 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\Reparation - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\womg - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\womgmt - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\womgt - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\Work-OrderManager - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -239,6 +235,7 @@
     <Content Include="Views\WorkOrders\Index.cshtml" />
     <Content Include="Views\WorkOrders\Create.cshtml" />
     <Content Include="Views\WorkOrders\Create - Copy.cshtml" />
+    <Content Include="Views\UserAccount\UnderCons.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

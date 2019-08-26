@@ -1,0 +1,29 @@
+﻿@model HgWorkflow.Models.UserAccount
+
+@{
+     ViewBag.Title = "Login";
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="login-page ">
+        <div class="form">
+            <form class="login-page text-center">
+                             <img src="~/images/logo.png" width="50", height="50" />
+                             <h4>Inloggning</h4>
+                                <hr />
+                             This website is under maintanance currently, Please try after some time.
+                        </form>
+                    </div>
+                </div>
+  
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
