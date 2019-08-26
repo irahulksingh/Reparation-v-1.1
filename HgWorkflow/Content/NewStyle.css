@@ -81,11 +81,11 @@ dd {
 }
 
     .form input {
-        font-family: "Roboto";
+        font-family: "Ubuntu";
         outline: 0;
         /*background: #f2f2f2;*/
         /*width: 100%;*/
-        border:1;
+        border:medium;
         margin: 0 0 15px;
         padding: 15px;
         box-sizing: border-box;
@@ -105,13 +105,9 @@ dd {
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-hr{
-    color:#000000;
-}
 
 body {
     background: #0f5ab9;
-   
     background-repeat:no-repeat;
     height:100%;
 }
