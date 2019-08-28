@@ -85,7 +85,7 @@ dd {
         outline: 0;
         /*background: #f2f2f2;*/
         /*width: 100%;*/
-        border:medium;
+        border:1;
         margin: 0 0 15px;
         padding: 15px;
         box-sizing: border-box;
