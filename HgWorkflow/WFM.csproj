@@ -133,14 +133,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201908212000179_newmigrationtochk.cs" />
-    <Compile Include="Migrations\201908212000179_newmigrationtochk.Designer.cs">
-      <DependentUpon>201908212000179_newmigrationtochk.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908221310061_newchanges.cs" />
-    <Compile Include="Migrations\201908221310061_newchanges.Designer.cs">
-      <DependentUpon>201908221310061_newchanges.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\UserAccount.cs" />
     <Compile Include="Models\WorkOrder.cs" />
@@ -201,7 +193,6 @@
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Properties\PublishProfiles\Reparations - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -237,17 +228,15 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\UserAccount\Register.cshtml" />
     <Content Include="Views\UserAccount\Login.cshtml" />
-    <Content Include="Views\WorkOrders\Create-Old.cshtml" />
     <Content Include="Views\WorkOrders\Delete.cshtml" />
     <Content Include="Views\WorkOrders\Details.cshtml" />
     <Content Include="Views\WorkOrders\Edit.cshtml" />
     <Content Include="Views\WorkOrders\Index.cshtml" />
     <Content Include="Views\WorkOrders\Create.cshtml" />
-    <Content Include="Views\WorkOrders\Create - Copy.cshtml" />
-    <Content Include="Views\WorkOrders\Edit - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -261,14 +250,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908212000179_newmigrationtochk.resx">
-      <DependentUpon>201908212000179_newmigrationtochk.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908221310061_newchanges.resx">
-      <DependentUpon>201908221310061_newchanges.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
